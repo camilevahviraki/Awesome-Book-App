@@ -4,7 +4,7 @@
 
 # Awesome-Book-App
 
-> This is my personnal portfolio, feel free to check it out.
+> This is my personnal App demo, feel free to check it out.
 
 
 ## Built With
