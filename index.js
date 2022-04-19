@@ -9,7 +9,9 @@ form.addEventListener('submit', (e) => {
     author: document.getElementById('author').value,
   };
 
-  if (localStorage.length === 0) {
+  if (obj.title === '' || obj.author === '') {
+    e.preventDefault();
+  } else if (localStorage.length === 0) {
     bookArr.push(obj);
     localStorage.setItem('bookArrObj', JSON.stringify(bookArr));
 
@@ -32,8 +34,9 @@ function updateUi() {
   buttonRemove.innerText = 'Remove';
 
   for (let i = 0; i < BookStored.length; i += 1) {
-    bookLi.innerHTML += `<p>${BookStored[i].title}</br>${BookStored[i].author}</p>`;
-    bookLi.append(buttonRemove);
+    bookLi.innerHTML += `<p>${BookStored[i].title}</br>${BookStored[i].author}</p>
+    <button>Remove</button> <hr>`;
+
     bookList.append(bookLi);
   }
 
