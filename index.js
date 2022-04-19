@@ -2,6 +2,8 @@ const form = document.querySelector('form');
 const bookList = document.getElementById('book-list');
 const bookArr = [];
 
+const checkItem = localStorage.getItem('bookArrObj');
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const obj = {
@@ -11,7 +13,7 @@ form.addEventListener('submit', (e) => {
 
   if (obj.title === '' || obj.author === '') {
     e.preventDefault();
-  } else if (localStorage.length === 0) {
+  } else if (!checkItem) {
     bookArr.push(obj);
     localStorage.setItem('bookArrObj', JSON.stringify(bookArr));
 
