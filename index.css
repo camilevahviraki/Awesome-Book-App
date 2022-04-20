@@ -1,5 +1,5 @@
 body {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
@@ -11,13 +11,8 @@ p {
   font-family: lato, sans-serif;
 }
 
-button {
-  margin-bottom: 8px;
-}
-
 #book-list {
   width: 96%;
-  height: fit-content;
   border: 3px solid black;
   position: relative;
 }
@@ -41,13 +36,14 @@ button {
   border-radius: 0;
   box-shadow: 2px 2px black;
   overflow: hidden;
+  margin-bottom: 8px;
 }
 
 .darkDiv {
   position: relative;
   display: flex;
-  align-items: center; 
-  height: 30px; 
+  align-items: center;
+  height: 30px;
   width: 100%;
   overflow: hidden;
 }
@@ -127,7 +123,7 @@ li {
   padding-left: 18px;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   border: solid;
@@ -135,21 +131,20 @@ nav{
   position: relative;
   align-items: center;
   width: 96vw;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
-.container{
-height: 80vh;
-display: flex;
-align-items: center;
-flex-direction: column;
-}
-
-nav button{
+nav button {
   cursor: pointer;
 }
 
-nav button{
+nav button {
   position: relative;
   border: none;
   background-color: #fff;
@@ -160,7 +155,7 @@ nav button{
   font-size: 20px;
 }
 
-nav > div{
+nav > div {
   position: absolute;
   display: flex;
   right: 0;
@@ -170,11 +165,11 @@ nav > div{
   align-items: center;
 }
 
-.active-btn{
+.active-btn {
   color:blue;
 }
 
-#last-modified{
+#last-modified {
   position: absolute;
   right: 4%;
   top:70%;
