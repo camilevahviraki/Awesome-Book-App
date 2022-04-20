@@ -1,6 +1,15 @@
 const form = document.querySelector('form');
 const bookList = document.getElementById('book-list');
 const bookArr = [];
+const dateContainer = document.getElementById('last-modified');
+let currentDate = new Date().toString();
+const regX= /\s\w+\s\d\d\s\d\d\d\d\s\d\d:\d\d:\d\d\s/g;
+currentDate = currentDate.match(regX).join();
+let dateOnly = currentDate.slice(0,12);
+let timeOnly = currentDate.slice(13)
+let  dayTime = currentDate.slice(13,15)
+dayTime = Number(dayTime)
+dateContainer.innerHTML = `${dateOnly}, ${timeOnly} ${dayTime >= 12 ? 'pm': 'am'} `
 
 const checkItem = localStorage.getItem('bookArrObj');
 
@@ -54,3 +63,5 @@ function updateUi() {
 }
 
 window.addEventListener('load', updateUi);
+
+
