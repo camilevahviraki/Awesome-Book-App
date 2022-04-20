@@ -82,10 +82,8 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const titleVal = document.getElementById('book_title').value;
   const authorVal = document.getElementById('author').value;
-  const Store = JSON.parse(localStorage.getItem('bookArrObj'));
-  const idVal = Store.length;
 
-  const SaveBook = new UserBook(titleVal, authorVal, idVal);
+  const SaveBook = new UserBook(titleVal, authorVal);
   SaveBook.addBook();
 });
 
