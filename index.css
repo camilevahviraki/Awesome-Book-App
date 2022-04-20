@@ -26,7 +26,7 @@ p {
   width: 100%;
 }
 
- button {
+button {
   font-family: lato, sans-serif;
   font-weight: 700;
   position: absolute;
@@ -142,15 +142,12 @@ nav {
 
 nav button {
   cursor: pointer;
-}
-
-nav button {
   position: relative;
-  border: none;
   background-color: #fff;
   margin: 1%;
   border: none;
   box-shadow: 0 0 transparent;
+  border-top: none;
   border-right: 2px solid black;
   font-size: 20px;
 }
@@ -166,13 +163,13 @@ nav > div {
 }
 
 .active-btn {
-  color:blue;
+  color: blue;
 }
 
 #last-modified {
   position: absolute;
   right: 4%;
-  top:70%;
+  top: 70%;
   font-family: lato, sans-serif;
   font-size: 18px;
 }
@@ -183,4 +180,4 @@ nav > div {
   font-weight: 600;
   font-family: lato, sans-serif;
   padding-left: 18px;
-} 
+}
