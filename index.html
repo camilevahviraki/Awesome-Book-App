@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Awesome Book App</title>
-</head>
-<body>
-    <h1>Awesome book</h1>
-    <div id="book-list">
+  </head>
+  <body>
+    <nav>
+      <span id="logo">Awesome Books</span>
+      <div>
+        <button class="active-btn">List</button><button>Add new</button
+        ><button>Contact</button>
+      </div>
+      <h3 id="last-modified">March 19th 2021, 9:25:32 am</h3>
+    </nav>
 
-    </div>
+    <div class="container">
+      <h1>Awesome book</h1>
+      <div id="book-list"></div>
 
-    <form action="#">
-        <input type="text" name="book_title" id="book_title" placeholder="Book title">
-        <br>
-        <input type="text" name="author" id="author" placeholder="Author">
-<br>
+      <form action="#">
+        <input
+          type="text"
+          name="book_title"
+          id="book_title"
+          placeholder="Book title"
+        />
+        <br />
+        <input type="text" name="author" id="author" placeholder="Author" />
+        <br />
         <button type="submit" id="submit">Add</button>
-    </form>
-    <script src="./index.js">
-      
-    </script>
-</body>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+    <footer><span>Copyright ...</span></footer>
+  </body>
 </html>
