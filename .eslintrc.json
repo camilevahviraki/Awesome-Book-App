@@ -12,6 +12,7 @@
     "extends": ["airbnb-base"],
     "rules": {
         "no-restricted-globals": "warn",
+        "no-inner-declarations": "off",
         "no-shadow": "off",
         "no-param-reassign": "off",
         "eol-last": "off",
